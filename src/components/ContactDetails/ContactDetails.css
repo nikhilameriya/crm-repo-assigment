@@ -1,0 +1,257 @@
+.contact-details {
+  background: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+
+/* Contact Header */
+.contact-header {
+  padding: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.contact-avatar {
+  flex-shrink: 0;
+}
+
+.contact-avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  object-fit: cover;
+}
+
+.avatar-placeholder {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-title {
+  font-size: 1.125rem;
+  margin: 0 0 0.25rem 0;
+  opacity: 0.9;
+}
+
+.contact-company {
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+  opacity: 0.8;
+}
+
+.contact-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.tag-vip {
+  background: rgba(255, 215, 0, 0.3);
+  border-color: rgba(255, 215, 0, 0.5);
+}
+
+.tag-technical {
+  background: rgba(59, 130, 246, 0.3);
+  border-color: rgba(59, 130, 246, 0.5);
+}
+
+.tag-decision-maker {
+  background: rgba(16, 185, 129, 0.3);
+  border-color: rgba(16, 185, 129, 0.5);
+}
+
+.contact-status {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.status-active {
+  background: rgba(16, 185, 129, 0.2);
+  color: #ffffff;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.contact-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.contact-meta small {
+  opacity: 0.8;
+  font-size: 0.875rem;
+}
+
+/* Contact Fields */
+.contact-fields {
+  padding: 0;
+}
+
+.folder-section {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.folder-section:last-child {
+  border-bottom: none;
+}
+
+.folder-header {
+  padding: 1rem 2rem;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.folder-header:hover {
+  background: #f3f4f6;
+}
+
+.folder-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.folder-icon {
+  font-size: 1.25rem;
+}
+
+.folder-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.folder-toggle {
+  font-size: 0.75rem;
+  color: #6b7280;
+  transition: transform 0.2s ease;
+}
+
+.folder-toggle.expanded {
+  transform: rotate(180deg);
+}
+
+.folder-content {
+  padding: 1.5rem 2rem;
+}
+
+.field-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .contact-status {
+    text-align: center;
+  }
+  
+  .contact-name {
+    font-size: 1.5rem;
+  }
+  
+  .folder-header {
+    padding: 0.75rem 1rem;
+  }
+  
+  .folder-content {
+    padding: 1rem;
+  }
+  
+  .field-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-header {
+    padding: 1rem;
+  }
+  
+  .contact-avatar img,
+  .avatar-placeholder {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .avatar-placeholder {
+    font-size: 1.25rem;
+  }
+  
+  .contact-name {
+    font-size: 1.25rem;
+  }
+  
+  .contact-title {
+    font-size: 1rem;
+  }
+  
+  .folder-header {
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .folder-content {
+    padding: 0.75rem;
+  }
+}

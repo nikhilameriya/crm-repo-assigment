@@ -1,0 +1,104 @@
+.error-boundary {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xl);
+  background-color: var(--background-color);
+}
+
+.error-boundary__container {
+  text-align: center;
+  max-width: 500px;
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-lg);
+}
+
+.error-boundary__icon {
+  font-size: 4rem;
+  margin-bottom: var(--spacing-lg);
+  opacity: 0.7;
+}
+
+.error-boundary__title {
+  font-size: var(--font-size-2xl);
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-md);
+  font-weight: 600;
+}
+
+.error-boundary__message {
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.6;
+  font-size: var(--font-size-base);
+}
+
+.error-boundary__event-id {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.error-boundary__event-id code {
+  background-color: var(--background-color);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  font-family: 'Courier New', monospace;
+  border: 1px solid var(--border-color);
+}
+
+.error-boundary__actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  justify-content: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.error-boundary__details {
+  text-align: left;
+  margin-top: var(--spacing-lg);
+}
+
+.error-boundary__details summary {
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-md);
+  padding: var(--spacing-sm);
+  background-color: var(--background-color);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+}
+
+.error-boundary__details summary:hover {
+  background-color: var(--border-color);
+}
+
+.error-boundary__stack {
+  background-color: var(--background-color);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  font-family: 'Courier New', monospace;
+  font-size: var(--font-size-xs);
+  overflow: auto;
+  max-height: 300px;
+  white-space: pre-wrap;
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+/* Dark theme support */
+[data-theme='dark'] .error-boundary__container {
+  background-color: var(--surface-color);
+  border-color: var(--border-color);
+}
+
+[data-theme='dark'] .error-boundary__stack {
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+}

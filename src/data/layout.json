@@ -1,0 +1,43 @@
+{
+  "sections": [
+    {
+      "id": "contact-header",
+      "type": "header",
+      "title": "Contact Details",
+      "order": 1,
+      "visible": true
+    },
+    {
+      "id": "contact-info",
+      "type": "contact-fields",
+      "title": "Contact Information",
+      "order": 2,
+      "visible": true
+    },
+    {
+      "id": "activities",
+      "type": "activities",
+      "title": "Recent Activities",
+      "order": 3,
+      "visible": true
+    },
+    {
+      "id": "notes",
+      "type": "notes",
+      "title": "Notes",
+      "order": 4,
+      "visible": true
+    }
+  ],
+  "layout": {
+    "type": "two-column",
+    "mainColumn": {
+      "width": "70%",
+      "sections": ["contact-header", "contact-info"]
+    },
+    "sideColumn": {
+      "width": "30%",
+      "sections": ["activities", "notes"]
+    }
+  }
+}

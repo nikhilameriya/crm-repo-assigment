@@ -1,0 +1,98 @@
+{
+  "contact": {
+    "id": "contact-001",
+    "firstName": "Sarah",
+    "lastName": "Johnson",
+    "email": "sarah.johnson@techcorp.com",
+    "phone": "+1 (555) 123-4567",
+    "dateOfBirth": "1988-03-15",
+    "company": "TechCorp Solutions",
+    "jobTitle": "Senior Software Engineer",
+    "department": "Engineering",
+    "industry": "technology",
+    "street": "123 Innovation Drive",
+    "city": "San Francisco",
+    "state": "California",
+    "zipCode": "94105",
+    "country": "us",
+    "leadSource": "website",
+    "tags": ["VIP", "Technical", "Decision Maker"],
+    "priority": "high",
+    "description": "Senior engineer with expertise in React and Node.js. Key decision maker for technical solutions. Previously worked at major tech companies.",
+    "avatar": "https://via.placeholder.com/60x60/4f46e5/ffffff?text=SJ",
+    "status": "active",
+    "lastContact": "2025-09-25",
+    "nextFollowUp": "2025-10-02"
+  },
+  "activities": [
+    {
+      "id": "activity-001",
+      "type": "email",
+      "title": "Sent project proposal",
+      "description": "Sent detailed proposal for the new CRM system implementation",
+      "date": "2025-09-25",
+      "time": "14:30",
+      "status": "completed",
+      "priority": "high"
+    },
+    {
+      "id": "activity-002",
+      "type": "call",
+      "title": "Follow-up call scheduled",
+      "description": "Scheduled follow-up call to discuss technical requirements",
+      "date": "2025-09-27",
+      "time": "10:00",
+      "status": "scheduled",
+      "priority": "medium"
+    },
+    {
+      "id": "activity-003",
+      "type": "meeting",
+      "title": "Demo presentation",
+      "description": "Product demo for stakeholders",
+      "date": "2025-09-23",
+      "time": "15:00",
+      "status": "completed",
+      "priority": "high"
+    },
+    {
+      "id": "activity-004",
+      "type": "task",
+      "title": "Contract review",
+      "description": "Review and finalize contract terms",
+      "date": "2025-10-01",
+      "time": "09:00",
+      "status": "pending",
+      "priority": "urgent"
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-001",
+      "title": "Technical Requirements",
+      "content": "Sarah mentioned they need React-based solution with real-time updates. They're currently using legacy system that needs modernization.",
+      "author": "John Smith",
+      "date": "2025-09-25",
+      "time": "16:45",
+      "type": "meeting-note"
+    },
+    {
+      "id": "note-002",
+      "title": "Budget Discussion",
+      "content": "Budget range is $50K-$75K for initial implementation. Phase 2 expansion planned for Q2 2026.",
+      "author": "Jane Doe",
+      "date": "2025-09-24",
+      "time": "11:20",
+      "type": "business-note"
+    },
+    {
+      "id": "note-003",
+      "title": "Team Introduction",
+      "content": "Sarah will introduce us to their CTO next week. Good opportunity to understand technical architecture and constraints.",
+      "author": "John Smith",
+      "date": "2025-09-23",
+      "time": "17:10",
+      "type": "follow-up"
+    }
+  ]
+}

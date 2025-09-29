@@ -1,0 +1,193 @@
+{
+  "folders": [
+    {
+      "id": "personal-info",
+      "name": "Personal Information",
+      "icon": "person",
+      "order": 1,
+      "expanded": true,
+      "fields": [
+        {
+          "id": "firstName",
+          "label": "First Name",
+          "type": "text",
+          "required": true,
+          "placeholder": "Enter first name"
+        },
+        {
+          "id": "lastName",
+          "label": "Last Name",
+          "type": "text",
+          "required": true,
+          "placeholder": "Enter last name"
+        },
+        {
+          "id": "email",
+          "label": "Email Address",
+          "type": "email",
+          "required": true,
+          "placeholder": "Enter email address"
+        },
+        {
+          "id": "phone",
+          "label": "Phone Number",
+          "type": "phone",
+          "required": false,
+          "placeholder": "Enter phone number"
+        },
+        {
+          "id": "dateOfBirth",
+          "label": "Date of Birth",
+          "type": "date",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "company-info",
+      "name": "Company Information",
+      "icon": "business",
+      "order": 2,
+      "expanded": true,
+      "fields": [
+        {
+          "id": "company",
+          "label": "Company Name",
+          "type": "text",
+          "required": false,
+          "placeholder": "Enter company name"
+        },
+        {
+          "id": "jobTitle",
+          "label": "Job Title",
+          "type": "text",
+          "required": false,
+          "placeholder": "Enter job title"
+        },
+        {
+          "id": "department",
+          "label": "Department",
+          "type": "text",
+          "required": false,
+          "placeholder": "Enter department"
+        },
+        {
+          "id": "industry",
+          "label": "Industry",
+          "type": "select",
+          "required": false,
+          "options": [
+            { "value": "technology", "label": "Technology" },
+            { "value": "finance", "label": "Finance" },
+            { "value": "healthcare", "label": "Healthcare" },
+            { "value": "education", "label": "Education" },
+            { "value": "retail", "label": "Retail" },
+            { "value": "other", "label": "Other" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "address-info",
+      "name": "Address Information",
+      "icon": "location",
+      "order": 3,
+      "expanded": false,
+      "fields": [
+        {
+          "id": "street",
+          "label": "Street Address",
+          "type": "text",
+          "required": false,
+          "placeholder": "Enter street address"
+        },
+        {
+          "id": "city",
+          "label": "City",
+          "type": "text",
+          "required": false,
+          "placeholder": "Enter city"
+        },
+        {
+          "id": "state",
+          "label": "State/Province",
+          "type": "text",
+          "required": false,
+          "placeholder": "Enter state or province"
+        },
+        {
+          "id": "zipCode",
+          "label": "ZIP/Postal Code",
+          "type": "text",
+          "required": false,
+          "placeholder": "Enter ZIP or postal code"
+        },
+        {
+          "id": "country",
+          "label": "Country",
+          "type": "select",
+          "required": false,
+          "options": [
+            { "value": "us", "label": "United States" },
+            { "value": "ca", "label": "Canada" },
+            { "value": "uk", "label": "United Kingdom" },
+            { "value": "au", "label": "Australia" },
+            { "value": "de", "label": "Germany" },
+            { "value": "fr", "label": "France" },
+            { "value": "other", "label": "Other" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "additional-info",
+      "name": "Additional Information",
+      "icon": "info",
+      "order": 4,
+      "expanded": false,
+      "fields": [
+        {
+          "id": "leadSource",
+          "label": "Lead Source",
+          "type": "select",
+          "required": false,
+          "options": [
+            { "value": "website", "label": "Website" },
+            { "value": "referral", "label": "Referral" },
+            { "value": "social-media", "label": "Social Media" },
+            { "value": "trade-show", "label": "Trade Show" },
+            { "value": "cold-call", "label": "Cold Call" },
+            { "value": "other", "label": "Other" }
+          ]
+        },
+        {
+          "id": "tags",
+          "label": "Tags",
+          "type": "tags",
+          "required": false,
+          "placeholder": "Add tags..."
+        },
+        {
+          "id": "priority",
+          "label": "Priority",
+          "type": "select",
+          "required": false,
+          "options": [
+            { "value": "low", "label": "Low" },
+            { "value": "medium", "label": "Medium" },
+            { "value": "high", "label": "High" },
+            { "value": "urgent", "label": "Urgent" }
+          ]
+        },
+        {
+          "id": "description",
+          "label": "Description",
+          "type": "textarea",
+          "required": false,
+          "placeholder": "Enter additional notes or description...",
+          "rows": 4
+        }
+      ]
+    }
+  ]
+}
